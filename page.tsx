@@ -404,7 +404,7 @@ Looking forward to celebrating this beautiful day with you! ❤️`
           </div>
 
           <div className="hero-kicker hero-invite">
-            We invite you to celebrate the beginning of our forever
+            Come be part of the moment our story takes its most beautiful turn
           </div>
 
           <div className="hero-scroll">
@@ -485,7 +485,7 @@ Looking forward to celebrating this beautiful day with you! ❤️`
               </h2>
 
               <p>
-                Before we step into forever, here are a few
+                Before we step into our happiest chapter, here are a few
                 moments from the journey that brought us here.
               </p>
             </div>
@@ -1196,7 +1196,7 @@ Looking forward to celebrating this beautiful day with you! ❤️`
 
             <div className="blurred-envelope-background">
               <img
-                src="/images/envelop.png"
+                src="/images/envelop.webp"
                 alt=""
                 aria-hidden="true"
               />
@@ -1229,7 +1229,7 @@ Looking forward to celebrating this beautiful day with you! ❤️`
               <div className="envelope-wrapper">
 
                 <img
-                  src="/images/envelop.png"
+                  src="/images/envelop.webp"
                   alt="Wedding invitation envelope"
                   className="envelope-image"
                 />

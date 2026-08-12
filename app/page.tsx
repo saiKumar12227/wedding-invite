@@ -203,11 +203,11 @@ export default function Home() {
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
 
-    ctx.fillText(
-      "✦ SCRATCH TO REVEAL ✦",
-      width / 2,
-      height / 2
-    );
+    // ctx.fillText(
+    //   "✦ SCRATCH TO REVEAL ✦",
+    //   width / 2,
+    //   height / 2
+    // );
 
     const getPos = (e: MouseEvent | TouchEvent) => {
       const rect = canvas.getBoundingClientRect();
@@ -449,11 +449,11 @@ Looking forward to celebrating this beautiful day with you! ❤️`
           </div>
 
           <div className="hero-kicker hero-invite">
-            We invite you to celebrate the beginning of our forever
+            Come be part of the moment our story takes its most beautiful turn
           </div>
 
           <div className="hero-scroll">
-            <span>Our story awaits</span>
+            {/* <span>Our story awaits</span> */}
             <div className="scroll-arrow">↓</div>
           </div>
         </motion.div>
@@ -530,7 +530,7 @@ Looking forward to celebrating this beautiful day with you! ❤️`
               </h2>
 
               <p>
-                Before we step into forever, here are a few
+                Before we step into our happiest chapter, here are a few
                 moments from the journey that brought us here.
               </p>
             </div>
@@ -546,70 +546,70 @@ Looking forward to celebrating this beautiful day with you! ❤️`
     caption="Where it all began"
   />
 
-  <GalleryCard
+  {/* <GalleryCard
     src="/images/couple-02.1.jpeg"
     alt="Sai and Prasanthi"
     chapter="Chapter Two"
-    caption="Moments we treasure"
+    caption="Bengaluru Bike Rides"
     wide
-  />
+  /> */}
 
   <GalleryCard
     src="/images/couple-02.jpeg"
     alt="Sai and Prasanthi"
-    chapter="Chapter Three"
-    caption="Growing together"
+    chapter="Chapter Two"
+    caption="Goa Vibes"
     wide
   />
 
   <GalleryCard
     src="/images/couple-03.jpeg"
     alt="Sai and Prasanthi"
-    chapter="Chapter Four"
-    caption="And now, forever"
+    chapter="Chapter Three"
+    caption="Just one more mall date..."
     wide
   />
 
   <GalleryCard
     src="/images/couple-04.jpeg"
     alt="Sai and Prasanthi"
-    chapter="The Beginning"
-    caption="Our forever starts here"
+    chapter="Chapter Four"
+    caption="Royal rides, auto edition"
     wide
   />
 
   <GalleryCard
     src="/images/couple-05.jpeg"
     alt="Sai and Prasanthi"
-    chapter="The Beginning"
-    caption="Our forever starts here"
+    chapter="Chapter Five"
+    caption="Dinner dates"
   />
 
   <GalleryCard
     src="/images/couple-06.jpeg"
     alt="Sai and Prasanthi"
-    chapter="The Beginning"
-    caption="Our forever starts here"
+    chapter="Chapter Six"
+    caption="Temple visits"
   />
 
   <GalleryCard
     src="/images/couple-07.jpeg"
     alt="Sai and Prasanthi"
-    chapter="The Beginning"
-    caption="Our forever starts here"
+    chapter="Chapter Seven"
+    caption="Birthday surprises"
   />
   <GalleryCard
     src="/images/couple-08.jpeg"
     alt="Sai and Prasanthi"
-    chapter="The Beginning"
-    caption="Our forever starts here"
+    chapter="Chapter Eight"
+    caption="rainy day rides"
   />
 
   <GalleryCard
-    src="/images/couple-09.jpeg"
+    src="/images/couple-10.png"
     alt="Sai and Prasanthi"
-    chapter="The Beginning"
-    caption="Our forever starts here"
+    chapter="chapters continue..."
+    caption="The Beginning"
     wide
   />
 
@@ -650,38 +650,41 @@ Looking forward to celebrating this beautiful day with you! ❤️`
 
               </div>
 
-              <div className="scratch-area">
+              <div
+  className="scratch-area"
+  style={{
+    backgroundImage: "url('/images/couple-09.jpeg')",
+  }}
+>
+  <div
+    className={`revealed-date ${
+      isScratched ? "active" : ""
+    }`}
+  >
+    <span className="date-day">
+      SEPTEMBER
+    </span>
 
-                <div
-                  className={`revealed-date ${
-                    isScratched ? "active" : ""
-                  }`}
-                >
-                  <span className="date-day">
-                    SEPTEMBER
-                  </span>
+    <span className="date-number">
+      05
+    </span>
 
-                  <span className="date-number">
-                    05
-                  </span>
+    <span className="date-year">
+      2026
+    </span>
 
-                  <span className="date-year">
-                    2026
-                  </span>
+    <span className="date-time">
+      SUMUHURTHAM • 9:37 PM
+    </span>
+  </div>
 
-                  <span className="date-time">
-                    SUMUHURTHAM • 9:37 PM
-                  </span>
-                </div>
-
-                <canvas
-                  ref={canvasRef}
-                  className={`scratch-canvas ${
-                    isScratched ? "faded" : ""
-                  }`}
-                />
-
-              </div>
+  <canvas
+    ref={canvasRef}
+    className={`scratch-canvas ${
+      isScratched ? "faded" : ""
+    }`}
+  />
+</div>
 
               {isScratched && (
                 <motion.div
@@ -1202,7 +1205,7 @@ Looking forward to celebrating this beautiful day with you! ❤️`
               FINAL MESSAGE
           ================================================= */}
 
-          <footer className="invitation-footer">
+          {/* <footer className="invitation-footer">
 
             <div className="footer-ornament">
               ✦
@@ -1233,7 +1236,7 @@ Looking forward to celebrating this beautiful day with you! ❤️`
               ♥ &nbsp; ♥ &nbsp; ♥
             </div>
 
-          </footer>
+          </footer> */}
 
         </div>
       )}
@@ -1260,7 +1263,7 @@ Looking forward to celebrating this beautiful day with you! ❤️`
 
             <div className="blurred-envelope-background">
               <img
-                src="/images/envelop.png"
+                src="/images/envelop.webp"
                 alt=""
                 aria-hidden="true"
               />
@@ -1293,7 +1296,7 @@ Looking forward to celebrating this beautiful day with you! ❤️`
               <div className="envelope-wrapper">
 
                 <img
-                  src="/images/envelop.png"
+                  src="/images/envelop.webp"
                   alt="Wedding invitation envelope"
                   className="envelope-image"
                 />
